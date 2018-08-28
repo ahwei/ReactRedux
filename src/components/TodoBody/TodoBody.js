@@ -12,6 +12,7 @@ export default class TodoBody extends Component {
   render() {
     const { todo } = this.props;
     const List = todo.get("List").toJS();
+    // const  style = {{ textDecoration: 'line-through' }    }
     return (
       <div>
         <h2>Todo List:</h2>
