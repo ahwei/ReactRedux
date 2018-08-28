@@ -29,7 +29,9 @@ export default class TodoHead extends Component {
         <h1>{todo.get("Title")}</h1>
         <h2>You have {List.length} Todos</h2>
         <input value={addValue} onChange={this.handelChange} />
-        <button onClick={this.handelAddTodo}>Add</button>
+        <button className="btn btn-success" onClick={this.handelAddTodo}>
+          Add
+        </button>
       </div>
     );
   }
